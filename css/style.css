@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hachi+Maru+Pop&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* 
+font-family: "Open Sans", sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Hachi Maru Pop', cursive;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #18171d;
+}
+img {
+    max-width: 100%;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* comienzo del header */
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(
+        90deg,
+        rgba(47,28,42,1) 0%,
+        rgba(45,54,61,1) 50%,
+        rgba(19,41,65,1) 100%
+    );
+
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:#bab250;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    display: block;
+    padding: 20px;
+    color:#dfdde0;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.menu .navbar ul li a:hover{
+    color:#bab250;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    display: none;
+    cursor: pointer;
+}
+.submenu{
+    position: relative;
+
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+table{
+    width: 100%;
+}
+th, td{
+    color:#dfdde0;
+}
+.borrar {
+    background-color: #bab250;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #dfdde0;
+    font-weight: 800;
+}
+.header-txt{
+    text-align: center;
+}
+.header-txt h1{
+    font-size: 100px;
+    color: #838586;;
+    font-family: 'Bebas Neue', cursive;
+    margin-top :6rem;
+}
+.header-txt p{
+    font-size: 16px;
+    color: #dfdde0;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+.header-txt img{
+    width: 700px;
+    display: block;
+}
+.btn-1, .btn-2{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #bab250;
+    color: #dfdde0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+/* terminacion del header */
+
+
+/* comienzo del section-about */
+
+.about {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+.about-img img {
+    width: 350px;
+}
+.about-txt {
+    flex-basis: 50%;
+}
+h2 {
+    color: #dfdde0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+p{
+    color: #dfdde0;
+    font-size: 16px;
+}
+
+/* terminacion del section-about  */
+
+.products {
+    padding: 0 0 200px 0;
+    text-align: center;
+}
+
+.products h2{
+    margin-bottom: 50px;
+}
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+h3{
+    color: #dfdde0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.precio{
+    color: #bab250;
+    font-weight: 800;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.btn-2{
+    margin: 0;
+    padding: 8px 35px;
+}
+
+
+.footer{
+    background-color: #222;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social a{
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social a:hover{
+    color: #e65c00;
+    transform: scale(1.2);
+}
+
