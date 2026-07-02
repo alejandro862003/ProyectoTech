@@ -224,4 +224,73 @@ h3{
     color: #e65c00;
     transform: scale(1.2);
 }
-
+@media screen and (max-width: 991px) {
+    
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #18171d;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .logo{
+        display: none;
+    }
+    .submenu:hover #carrito{
+        min-width: 340px;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+    .header-txt{
+        text-align: center;
+    }
+    .header-txt h1{
+        font-size: 90px;
+        line-height: 1;
+    }
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img{
+        order: 2;
+    }
+    .about-img img{
+        width: 250px;
+    }
+     .about-txt{
+        margin-bottom: 25px;
+    }
+    .products{
+        padding: 30px;
+    }
+    .product-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .social{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .social a{
+        font-size: 40px;
+    }
+}
