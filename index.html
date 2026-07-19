@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
- 
-       <title>Ventas de Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Ventas de Productos</title>
 </head>
 
 <body>
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo">logo</a>
+            <a href="index.html" class="logo">logo</a>
             <input type="checkbox" id="menu"/>
             <label for="menu">
                 <img src="img/menu.png" class="menu-icono" alt="menu">
             </label>
-            
+
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
                     <li><a href="contacto.html">Contactos</a></li>
                 </ul>
             </nav>
@@ -40,11 +41,19 @@
                                         <th>Nombre</th>
                                         <th>Precio</th>
                                         <th></th>
-                                    </tr>                       
+                                    </tr>
                                 </thead>
                                 <tbody></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2">Total:</td>
+                                        <td id="total-carrito">$0</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
                             </table>
                             <a href="#" class="btn-2" id="vaciar-carrito">Vaciar Carrito</a>
+                            <a href="#" class="btn-2" id="comprar-carrito" style="margin-top: 10px; display: block; text-align: center;">Comprar Carrito</a>
                         </div>
                     </li>
                 </ul>
@@ -56,134 +65,143 @@
                 <h1>Ofertas De Parrillas</h1>
                 <p>Estrena tu parrilla</p>
                 <img src="img/parrilla2.png" alt="parrilla">
-                <a href="#" class="btn-1">Información</a>
             </div>
         </div>
     </header>
 
-    <section class="about container">
+    <section class="about container" id="servicios">
         <div class="about-img">
             <img src="img/parrilla.jpg" alt="">
         </div>
         <div class="about-txt">
             <h2>Nosotros</h2>
             <p>Hacemos increibles ventanas,parrillas y rejas para tu hogar.
-                Cualquier dudas que tenga apreta en el boton 
+                Cualquier dudas que tenga apreta en el boton
                 "Informacion" para saber mas.
             </p>
-            <a href="#" class="btn-1">INFORMACION</a>
+            <a href="contacto.html" class="btn-1">INFORMACION</a>
         </div>
     </section>
 
     <main class="products container" id="lista-1">
-        
+
         <h2 id="productos">Productos</h2>
 
         <div class="product-content">
 
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/parrilla2.jpeg" alt="">
                 <div class="product-txt">
                     <h3>Parrilla</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$40.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/parrilla3.jpeg" alt="">
                 <div class="product-txt">
                     <h3>Parrilla</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$50.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/puerta1.jpeg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Puerta</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$60.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/puerta2.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Puerta</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$70.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/ventana1.jpeg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Ventana</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$100.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/ventana2.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Ventana</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$120.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/parrilla2.jpeg" alt="">
                 <div class="product-txt">
                     <h3>Parrilla</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$50.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/ventana2.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Ventana</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$150.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
                 </div>
             </div>
             <div class="product">
-                <img src="img/parrilla.jpg" alt="">
+                <img src="img/puerta2.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Parrilla</h3>
+                    <h3>Puerta</h3>
                     <p>Muy buena calidad</p>
-                    <p class="precio">$50000</p>
+                    <p class="precio">$70.000</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar</a>
                 </div>
             </div>
 
-
         </div>
     </main>
 
-    
+
     <footer class="footer">
         <div class="social container">
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i>  
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="#">
-                <i class="fa-brands fa-twitter"></i>
+            <a href="https://www.google.com.ar">
+                <i class="fa-brands fa-google"></i>
             </a>
         </div>
 
     </footer>
-  
-    
+
+
+    <!-- Modal de confirmación de compra -->
+    <div class="modal-overlay" id="purchase-modal">
+        <div class="modal-box">
+            <div class="modal-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>¡Compra exitosa!</h3>
+            <p>El producto se agregó a tu carrito.</p>
+        </div>
+    </div>
+
 <script src="js/app.js"></script>
 
 </body>

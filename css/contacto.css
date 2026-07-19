@@ -1,0 +1,167 @@
+/* =========================================
+   CONTACTO.CSS
+   Estilos específicos de contacto.html
+   (los estilos compartidos están en common.css)
+   ========================================= */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18171d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Wrapper que centra el formulario ---------- */
+.contact-wrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* ---------- Formulario ---------- */
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #18171d;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+}
+.form-subtitle{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+.input-field:focus-within{
+    box-shadow: 0 0 0 2px #3c00a0;
+}
+.input-field.input-error{
+    box-shadow: 0 0 0 2px #d33;
+}
+input, textarea{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.input-field i{
+    color: #999;
+    margin-left: 15px;
+}
+.textarea-field{
+    align-items: flex-start;
+}
+.textarea-field i{
+    margin-top: 18px;
+}
+textarea{
+    resize: vertical;
+    min-height: 90px;
+    max-height: 220px;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.form-error{
+    color: #d33;
+    text-align: left;
+    margin: -5px 0 10px;
+}
+.form-success{
+    color: #1a8f4c;
+    text-align: left;
+    margin: -5px 0 10px;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 100%;
+    background: #3c00a0;
+    color: #fff;
+    height: 45px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-field button:hover{
+    background: #2c0080;
+}
+.btn-field button:disabled{
+    background: #b3a3d9;
+    cursor: not-allowed;
+}
+.input-group{
+    height: auto;
+}
+
+/* =========================================
+   MEDIA QUERIES — contacto.html
+   ========================================= */
+@media screen and (max-width: 600px){
+    .contact-wrapper{
+        padding: 20px 10px;
+    }
+    .form-box{
+        padding: 40px 30px 50px;
+    }
+    .form-box h1{
+        font-size: 26px;
+    }
+    .input-group{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .form-box{
+        padding: 30px 20px 40px;
+    }
+    .btn-field{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-field button{
+        flex-basis: 100%;
+    }
+}
