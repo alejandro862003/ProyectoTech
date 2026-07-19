@@ -22,3 +22,6 @@ transition : para las transformacions de color y las escalas.
 
 Les informo que me falto la pagina de Contacto, que eso me voy a dedicar de hacerlo en la semana, ya que estuve muy mal de salud.
 desde ya muchas gracias.
+
+HOLA, EN EL PROYECTO AGREGUE LA PARTE DEL CONTACTO,Y AGREGUE UN CUADRO PARA LA REALIZACION DE COMPRA,TAMBIEN VACIAR Y COMPRAR Y ELIMINAR.
+AGREGUE LOS ICONOS PARA QUE SE ENLACE A LAS PAGINAS. 
